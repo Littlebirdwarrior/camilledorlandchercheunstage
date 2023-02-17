@@ -37,6 +37,7 @@ button {
     --secondary: #BBDCF3;
     --tertiary: #184E75;
     --white: #fff;
+    --shadow: 2px 3px 15px rgba(23, 22, 22, 0.39);
 
 }
 
@@ -47,23 +48,28 @@ body{
 }
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     padding: 1rem 0;
     background: var(--footer);
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+main, .footer-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 main {
-    max-width: 80%;
     height: 100%;
-    margin: 0 auto;
 }
 /*Le titre*/
 
 h1 {
     text-align: center;
     font-size: 1.8rem;
-    padding-top: 2rem;
 }
 
 h1 strong {
@@ -78,24 +84,57 @@ h1 strong {
     color: var(--secondary);
 }
 
-/*Le gameGround*/
+/*les dimension du jeu*/
+/**Toute modif ici entraine dérèglement du jeu...Carefull, donc*/
+h1 {
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+/*l'espace de jeu*/
+.gameGround {
+    width: 910px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.chocoCanva {
+    width: 910px;
+    height: 360px;
+}
+
+/*Le sol qui se foule gaiment*/
+.ground {
+    width: 910px;
+    height: 30px;
+    position: absolute;
+    top: 558px;
+}
+
+/*Camille, ta future stagiaire*/
+.camille {
+    position: absolute;
+    margin-top: 10px;
+    top: 437px;
+}
+
+.game, .chocoCanva {
+    overflow: hidden;
+}
+
+
+/*Les mise en forme du game*/
 
 .gameGround {
     background: var(--secondary);
-    width: 910px;
-    height: 480px;
-    margin: 1rem auto;
+    box-shadow: var(--shadow);
 }
 
 .ground {
     background: var(--tertiary);
-    width: 910px;
-    height: 30px;
-    position: absolute;
-    top: 542px;
 }
 
-/*Le gamer*/
+/*Le game*/
 
 /*Les chocolats*/
 .chocolat {
@@ -103,17 +142,91 @@ h1 strong {
     height: auto;
 }
 
-/*Camille*/
+/*Camille, ta future stagiaire*/
 .camille {
     width: 120px;
     height: auto;
-    position: absolute;
-    margin-top: 10px;
-    top: 421px;
 }
 
 .chocolat>img, .camille >img{
     width: 100%;
 }
+
+/*Les controller, left, jump = goUp, right*/
+
+.controller {
+    width: 300px;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controller button {
+    background: var(--primary);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px 30px 15px 15px;
+    box-shadow: var(--shadow);
+}
+
+.controller button:hover{
+    box-shadow: 3px 3px 15px rgba(187, 220, 243, 0.41);
+
+}
+
+.controller button >i >img {
+    width: 30px;
+    margin-top: 6px;
+}
+
+.goLeft {
+    transform: rotate(-90deg);
+}
+
+.goRight {
+    transform: rotate(90deg);
+}
+
+/*Footer*/
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer-content h2 {
+    font-size: 1.8rem;
+    align-self: center;
+}
+
+.footer-content h2>strong>a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.footer-content h2>strong>a:hover {
+    color: var(--secondary);
+}
+
+.contact a{
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    margin: 8px;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: var(--tertiary);
+    box-shadow: var(--shadow);
+}
+
+.contact a:hover, .contact a:focus{
+    background: var(--primary);
+    box-shadow: 3px 3px 15px rgba(187, 220, 243, 0.41);
+}
+
 
 

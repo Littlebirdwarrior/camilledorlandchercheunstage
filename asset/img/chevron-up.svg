@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M7.646,4.646C7.74,4.552 7.867,4.499 8,4.499C8.133,4.499 8.26,4.552 8.354,4.646L14.354,10.646C14.448,10.74 14.501,10.867 14.501,11C14.501,11.275 14.275,11.501 14,11.501C13.867,11.501 13.74,11.448 13.646,11.354L8,5.707L2.354,11.354C2.26,11.448 2.133,11.501 2,11.501C1.725,11.501 1.499,11.275 1.499,11C1.499,10.867 1.552,10.74 1.646,10.646L7.646,4.646Z" style="fill:white;stroke:white;stroke-width:1px;"/>
 </svg>
