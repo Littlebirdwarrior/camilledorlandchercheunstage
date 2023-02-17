@@ -1,5 +1,33 @@
 /*Reset*/
 
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    color: var(--white);
+}
+
+html, body, footer {
+    margin: 0;
+}
+
+h1, h2, a, p {
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+img, figure, main, section {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+}
+
 
 /* Mes couleurs*/
 :root{
@@ -11,3 +39,81 @@
     --white: #fff;
 
 }
+
+/*Général*/
+
+body{
+    background: var(--background);
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0;
+    background: var(--footer);
+}
+
+main {
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+/*Le titre*/
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+}
+
+h1 strong {
+    font-weight: 700;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+/*Le gameGround*/
+
+.gameGround {
+    background: var(--secondary);
+    width: 910px;
+    height: 480px;
+    margin: 1rem auto;
+}
+
+.ground {
+    background: var(--tertiary);
+    width: 910px;
+    height: 30px;
+    position: absolute;
+    top: 542px;
+}
+
+/*Le gamer*/
+
+/*Les chocolats*/
+.chocolat {
+    width: 30px;
+    height: auto;
+}
+
+/*Camille*/
+.camille {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    margin-top: 10px;
+    top: 421px;
+}
+
+.chocolat>img, .camille >img{
+    width: 100%;
+}
+
+

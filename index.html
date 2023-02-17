@@ -8,7 +8,7 @@
     <!---Mes fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
     <!---Mes styles -->
     <link href="asset/styles.css" rel="stylesheet"/>
     <!---Title -->
@@ -16,30 +16,31 @@
 </head>
 <body>
     <main>
-    <h1>Aide <strong>Camille</strong>, ta future <strong>stagiaire</strong> à collecter ses <strong>chocolats</strong> <strong>!</strong></h1>
+    <h1>Aide <strong class="text-secondary">Camille</strong>, ta future <strong class="text-secondary">stagiaire</strong>
+        à collecter ses <strong class="text-secondary">chocolats</strong> <strong class="text-primary">!</strong></h1>
         <section>
-            <div id="gameGroud">
-                <div id="gameBackground"></div>
+            <div id="gameGroud" class="gameGround">
                 <div id="game">
                     <div id="chocoCanva">
-                        <figure>
+                        <figure class="chocolat">
                             <img src="asset/img/chocolat-1.png" alt="chocolat au lait"/>
                         </figure>
-                        <figure>
+                        <figure class="chocolat">
                             <img src="asset/img/chocolat-2.png" alt="chocolat aux noisettes"/>
                         </figure>
-                        <figure>
+                        <figure class="chocolat">
                             <img src="asset/img/chocolat-3.png" alt="chocolat noir"/>
                         </figure>
                     </div>
-                    <div id="camille">
-                        <figure>
+                    <div id="camilleCanva">
+                        <figure id="camille" class="camille">
                             <img src="asset/img/camille.png" alt="Camille ta future stagiaire"/>
                         </figure>
-
                     </div>
                 </div>
-                <div id="ground"></div>
+                <div id="ground" class="ground">
+
+                </div>
             </div>
 
             <div>
@@ -51,12 +52,14 @@
         </section>
     </main>
     <footer>
-        <p>Si ça t'as plus, <b><a href="mailto:camille.dorland@gmail.com">Contacte-moi</a></b> !</p>
         <div>
-            <a href="https://www.linkedin.com/in/camille-dorland-bbb850a7/">Mon LinkedIn</a>
-            <a href="https://camilledorland.com">Mon site</a>
-            <a href="https://camilledorland.com/assets/img/theme/cv-camille-dorland-2023-compress.pdf">Mon C.V</a>
+            <h2>Si ça vous à plus, <b><a href="mailto:camille.dorland@gmail.com">contactez-moi</a></b> !</h2>
+            <div>
+                <a href="https://www.linkedin.com/in/camille-dorland-bbb850a7/">Mon LinkedIn</a>
+                <a href="https://camilledorland.com">Mon site</a>
+                <a href="https://camilledorland.com/assets/img/theme/cv-camille-dorland-2023-compress.pdf">Mon C.V</a>
 
+            </div>
         </div>
 
     </footer>
