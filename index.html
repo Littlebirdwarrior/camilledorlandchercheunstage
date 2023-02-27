@@ -23,15 +23,19 @@
         <section id="gameGround" class="gameGround">
             <!----------->
             <div id="game" class="game">
+                <div id="score_help" class="score-help">
+                    Score : <span class="score">0</span> | Life :
+                    <span id="life"></span> | <span>Utilise ta souris</span>
+                </div>
                 <!----------->
                 <div id="chocoCanva" class="chocoCanva">
-                    <figure class="chocolats" id="choco1">
+                    <figure class="chocolats" id="choco1" data-oups='1'>
                         <img src="assets/img/chocolat-1.png" alt="chocolat au lait"/>
                     </figure>
-                    <figure class="chocolats" id="choco2">
+                    <figure class="chocolats" id="choco2" data-oups='2'>
                         <img src="assets/img/chocolat-2.png" alt="chocolat aux noisettes"/>
                     </figure>
-                    <figure class="chocolats" id="choco3">
+                    <figure class="chocolats" id="choco3" data-oups='3'>
                         <img src="assets/img/chocolat-3.png" alt="chocolat noir"/>
                     </figure>
                 </div>
@@ -42,12 +46,22 @@
                     </figure>
                 </div>
                 <!----------->
+                <div id="oups1" class="oups"></div>
+                <div id="oups2" class="oups"></div>
+                <div id="oups3" class="oups"></div>
+                <!----------->
                 <div id="ground" class="ground">
                 </div>
             </div>
             <!----------->
             <div id="restart" class="restart">
-                <button id="button-restart" class="button-restart">Rejouez</button>
+                <div>
+                    <h2>Il y a
+                        <span class="score">0</span>
+                        chocolat dans ta boite !</span>
+                    </h2>
+                    <button id="button-restart" class="button-restart">Rejouez</button>
+                </div>
             </div>
         </section>
     </main>

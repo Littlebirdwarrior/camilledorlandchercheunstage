@@ -144,10 +144,10 @@ h1 {
 
 /*Les chocolats*/
 .chocolats {
-    width: 40px;
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 1px;
+    z-index: 0;
 }
 
 
@@ -161,16 +161,53 @@ h1 {
     width: 100%;
 }
 
+/*Le score*/
+.score-help {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    height: 10%;
+    padding-top: 0.6rem;
+    color: var(--background);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.score-help span{
+    font-weight: bold;
+    text-align: center;
+}
+
+.score-help>span:first-child {
+    color: var(--primary);
+}
+
+.score-help>span:nth-child(even){
+    color: var(--tertiary);
+}
+
+.score-help>span:last-child{
+    color: var(--background);
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+
 /*-----------------Les id à modifier pour le de mouvements*/
 #choco1 {
-    left: calc(20% + 8%/2 - 2%/2);
+    top: -10rem;
+    left: calc(15% + 8%/2 - 2%/2);
 }
 
 #choco2 {
-    left: calc(48% + 8%/2 - 2%/2);
+    top: -5rem;
+    left: calc(45% + 8%/2 - 2%/2);
 }
 
 #choco3 {
+    top: 0;
     left: calc(75% + 8%/2 - 2%/2);
 }
 
@@ -184,15 +221,32 @@ h1 {
     height: 110%;
     position: absolute;
     top: 0;
-    background: #ee9393;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 100px rgb(201, 50, 50);
+    background: #e87867;
+    box-shadow: inset 0 0 100px rgb(229, 82, 82);
+    z-index: 20;
 }
 
 #restart {
     display: none;
+}
+
+#restart>div {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#restart>div> h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#restart>div> h2>span {
+    font-weight: bold;
+    color: var(--primary);
 }
 
 .button-restart {

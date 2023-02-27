@@ -29,7 +29,7 @@ $(function () {
         //******launch and stop **********/
         //launch the script of the game (only if life greater than 0)
         if(life > 0){
-            let anim_id = requestAnimationFrame(the_game);
+            requestAnimationFrame(the_game);
         } else {
             stop_the_game();
         }

@@ -29,7 +29,7 @@ function set_choco_to_initial_position(chocolats){
 //decrement life when chocolats hit the ground
 function decrement_life(){
     life--;
-    // life_span.text(life);
+    life_span.text(life);
 }
 
 //manage when the choco hit camille
@@ -52,8 +52,8 @@ function update_score(){
     if(score % 10 === 0 && speed <= max_speed) {
         speed ++;
     }
-    // score_span.text(score);
-    // score_1.text(score);
+    score_span.text(score);
+    score_1.text(score);
 }
 
 //End the game when loose (cf fonction.js)
