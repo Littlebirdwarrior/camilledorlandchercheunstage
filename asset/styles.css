@@ -1,4 +1,4 @@
-/*Reset*/
+/*------------------------------Reset*/
 
 * {
     box-sizing: border-box;
@@ -34,20 +34,20 @@ button {
 }
 
 
-/* Mes couleurs*/
+/*------------------------ Mes couleurs*/
 :root{
     --background:#383D4E;
     --footer: #292C36;
     --primary: #DA4343;
     --secondary: #BBDCF3;
-    --tertiary: #184E75;
+    --tertiary: #055488;
     --white: #fff;
     --shadow: 2px 3px 15px rgba(23, 22, 22, 0.39);
     --hover-shadow: 3px 3px 15px rgba(187, 220, 243, 0.21);
 
 }
 
-/*Général*/
+/*------------------------------Général*/
 
 body{
     background: var(--background);
@@ -105,7 +105,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/*l'espace de jeu*/
+/*-------------------l'espace de jeu*/
 .gameGround {
     width: 90%;
     height: 75%;
@@ -142,7 +142,7 @@ h1 {
     background: var(--tertiary);
 }
 
-/*Le game*/
+/*----------------------------Le game*/
 
 /*Les chocolats*/
 .chocolat {
@@ -195,7 +195,7 @@ h1 {
 /*    transform: rotate(90deg);*/
 /*}*/
 
-/*Footer*/
+/*-------------------------Footer*/
 
 .footer-content{
     display: flex;
@@ -210,6 +210,7 @@ h1 {
 
 .footer-content h2 {
     font-size: 1.8rem;
+    padding-right: 20px;
 }
 
 .footer-content h2>strong>a {
@@ -240,7 +241,7 @@ h1 {
     box-shadow: var(--hover-shadow);
 }
 
-/*------- Media queries */
+/*------------------------- Media queries */
 
 @media screen and (max-width: 1100px){ /*NextHub*/
 
@@ -271,7 +272,9 @@ h1 {
     }
 
     .footer-content >h2{
-    margin-top: 1rem;
+        margin-top: 1rem;
+        padding-right: 0;
+
     }
 
     .footer-content> .contact {
