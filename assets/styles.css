@@ -108,14 +108,15 @@ h1 {
 /*-------------------l'espace de jeu*/
 .gameGround {
     width: 90%;
-    height: 75%;
+    height: 78%;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .chocoCanva, .game {
     width: 100%;
-    height: 100%;
+    height: 96%;
 }
 
 /*Le sol qui se foule gaiment*/
@@ -175,7 +176,7 @@ h1 {
 
 #camille {
     position: absolute;
-    bottom: -2rem;
+    bottom: 0;
 }
 
 .restart {
