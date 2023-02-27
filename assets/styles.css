@@ -272,6 +272,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
 }
 
 #restart>div> h2 {
