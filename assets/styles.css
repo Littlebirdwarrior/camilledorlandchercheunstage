@@ -119,6 +119,7 @@ h1 {
 /*-------------------l'espace de jeu*/
 .gameGround {
     width: 90%;
+    height: 82%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -229,7 +230,7 @@ h1 {
     position: absolute;
     z-index: 20;
     padding: 5px;
-    bottom: 2.8rem;
+    bottom: 3rem;
     font-size: 1rem;
     font-weight: bold;
     color: var(--primary);
