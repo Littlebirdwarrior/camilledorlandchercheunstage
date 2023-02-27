@@ -173,10 +173,10 @@ h1 {
     width: 100%;
     background: white;
     height: 10%;
-    padding-top: 0.6rem;
     color: var(--background);
     text-align: center;
     font-size: 1rem;
+    padding: 1rem 0;
 }
 
 .score-help span{
@@ -230,7 +230,7 @@ h1 {
     position: absolute;
     z-index: 20;
     padding: 5px;
-    bottom: 3rem;
+    bottom: 15%;
     font-size: 1rem;
     font-weight: bold;
     color: var(--primary);
