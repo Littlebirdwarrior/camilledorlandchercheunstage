@@ -23,5 +23,6 @@ let camille = $('#camille'),
     anim_id = 0,
     choco_current_position = 0,
     choco_top = 0,
-    camille_top = gameGround_height - camille_height;
+    camille_top = gameGround_height - camille_height,
+    oups_num = 0;
 life_span.text(life);

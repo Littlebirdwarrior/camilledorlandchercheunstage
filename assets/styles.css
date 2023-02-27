@@ -79,6 +79,17 @@ h1 strong {
     color: var(--secondary);
 }
 
+/*Les mise en forme du game*/
+
+.gameGround {
+    background: var(--secondary);
+    box-shadow: var(--shadow);
+}
+
+.ground {
+    background: #142c3d;
+}
+
 /*les dimension du jeu*/
 /**Toute modif ici entraine dérèglement du jeu...Carefull, donc*/
 
@@ -108,7 +119,6 @@ h1 {
 /*-------------------l'espace de jeu*/
 .gameGround {
     width: 90%;
-    height: 78%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -121,23 +131,16 @@ h1 {
 
 /*Le sol qui se foule gaiment*/
 .ground {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 10%;
+    z-index: 2;
 }
 
 /*Camille, ta future stagiaire*/
 .camille {
     margin-top: 10px;
-}
-/*Les mise en forme du game*/
-
-.gameGround {
-    background: var(--secondary);
-    box-shadow: var(--shadow);
-}
-
-.ground {
-    background: var(--tertiary);
 }
 
 /*----------------------------Le game*/
@@ -164,6 +167,7 @@ h1 {
 /*Le score*/
 .score-help {
     position: absolute;
+    top: 0;
     z-index: 1;
     width: 100%;
     background: white;
@@ -196,6 +200,7 @@ h1 {
 
 
 /*-----------------Les id à modifier pour le de mouvements*/
+/*Les chocolats*/
 #choco1 {
     top: -10rem;
     left: calc(15% + 8%/2 - 2%/2);
@@ -214,7 +219,36 @@ h1 {
 #camille {
     position: absolute;
     bottom: 0;
+    z-index: 5;
 }
+
+/*Les oups*/
+
+.oups {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    padding: 5px;
+    bottom: 2.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: 0 0 15px #fff;
+}
+
+#oups1 {
+    left: calc(16% + 8%/2 - 2%/2);
+}
+
+#oups2 {
+    left: calc(46% + 8%/2 - 2%/2);
+}
+
+#oups3 {
+    left: calc(76% + 8%/2 - 2%/2);
+}
+
+/*Le restart*/
 
 .restart {
     width: 100%;
@@ -223,7 +257,7 @@ h1 {
     top: 0;
     background: #e87867;
     box-shadow: inset 0 0 100px rgb(229, 82, 82);
-    z-index: 20;
+    z-index: 50;
 }
 
 #restart {

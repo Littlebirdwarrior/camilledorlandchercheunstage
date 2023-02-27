@@ -15,6 +15,7 @@ function choco_down(chocolats){
 //stop chocolat on the ground and return in initial position
 function check_choco_hits_floor(chocolats) {
     if(collision(chocolats, ground)){
+        show_oups(chocolats);
         decrement_life();
         return true;
     }
@@ -23,6 +24,20 @@ function check_choco_hits_floor(chocolats) {
 
 function set_choco_to_initial_position(chocolats){
     chocolats.css('top', choco_initial_position);
+}
+
+function show_oups(chocolats){
+    oups_num = chocolats.attr('data-oups');
+    $('#oups' + oups_num).show();
+    hide_oups(oups_num)
+
+}
+
+//hide the bullseye 800 ms after it's appeared
+function hide_oups(oups_num){
+    setTimeout(function () {
+        $('#oups' + oups_num).hide();
+    }, 500);
 }
 
 
