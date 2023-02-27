@@ -147,7 +147,7 @@ h1 {
     width: 40px;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 1px;
 }
 
 
@@ -162,15 +162,15 @@ h1 {
 }
 
 /*-----------------Les id à modifier pour le de mouvements*/
-#choco-1 {
+#choco1 {
     left: calc(20% + 8%/2 - 2%/2);
 }
 
-#choco-2 {
+#choco2 {
     left: calc(48% + 8%/2 - 2%/2);
 }
 
-#choco-3 {
+#choco3 {
     left: calc(75% + 8%/2 - 2%/2);
 }
 
