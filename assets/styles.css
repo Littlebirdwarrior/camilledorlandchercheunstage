@@ -466,7 +466,6 @@ h1 {
         height: 100vh;/*cette propriété ne passe pas si on la mets sur le footer*/
     }
 
-    /*nécessité d'une class responsive avec un toogle*/
     .footer-active {
         display: block;
         position: absolute;
@@ -474,6 +473,8 @@ h1 {
         height: 0;
         padding-top: 0;
         z-index: 100 !important;
+        -webkit-animation: scale-down-tl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-down-tl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)
     }
 
     .icone-close{
@@ -503,6 +504,40 @@ h1 {
     .footer-active .contact a{
         font-size: 1rem;
     }
+
+    /* animation footer*/
+
+    @-webkit-keyframes scale-down-tl {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+        }
+    }
+    @keyframes scale-down-tl {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+        }
+    }
+
+
+
 }
 
 
