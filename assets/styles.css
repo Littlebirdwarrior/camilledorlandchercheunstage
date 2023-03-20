@@ -499,6 +499,7 @@ h1 {
     .contact {
         height: 100%;
         align-content: space-around;
+        max-width: 330px;
     }
 
     .footer-active .contact a{
