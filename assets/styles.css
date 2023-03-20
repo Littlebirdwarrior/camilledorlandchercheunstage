@@ -15,6 +15,10 @@ html, body, footer {
     margin: 0;
 }
 
+footer {
+    padding: 0;
+}
+
 h1, h2, a, p {
     font-weight: 300;
     padding: 0;
@@ -53,9 +57,17 @@ body{
     background: var(--background);
 }
 footer {
-    background: var(--footer);
     position: absolute;
     bottom: 0;
+}
+
+/*Obligé de rajouter une div ou mon responsive ne marche pas*/
+.footer-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--footer);
     display: flex;
     align-content: baseline;
 }
@@ -93,14 +105,14 @@ h1 strong {
 /*les dimension du jeu*/
 /**Toute modif ici entraine dérèglement du jeu...Carefull, donc*/
 
-footer {
+footer{
     width: 100%;
     height: 18%; /*car main 85%*/
 }
 
 
 
-main, .footer-content {
+main, .footer-inside {
     max-width: 80%;
     margin: 0 auto;
     padding: 0 10px;
@@ -301,28 +313,28 @@ h1 {
 
 /*-------------------------Footer*/
 
-.footer-content{
+.footer-inside{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.footer-content>.contact {
+.footer-inside>.contact {
     display: flex;
     justify-content: center;
 }
 
-.footer-content h2 {
+.footer-inside h2 {
     font-size: 1.8rem;
     padding-right: 20px;
 }
 
-.footer-content h2>strong>a {
+.footer-inside h2>strong>a {
     color: var(--primary);
     font-weight: 600;
 }
 
-.footer-content h2>strong>a:hover {
+.footer-inside h2>strong>a:hover {
     color: var(--secondary);
 }
 
@@ -368,27 +380,27 @@ h1 {
         height: 68%;
     }
 
-    .footer-content{
+    .footer-inside{
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: space-around;
     }
 
-    .footer-content >h2{
+    .footer-inside >h2{
         margin-top: 1rem;
         padding-right: 0;
 
     }
 
-    .footer-content> .contact {
+    .footer-inside> .contact {
         justify-content: space-around;
     }
 }
 
 @media screen and (max-width: 560px) {
 
-    main, .footer-content {
+    main, .footer-inside {
         max-width: 95%;
     }
 
@@ -403,13 +415,13 @@ h1 {
         padding: 1rem 0;
     }
 
-    .footer-content{
+    .footer-inside{
         display: flex;
         justify-content: space-between;
         align-items: normal; /*sinon bouton bizarre*/
     }
 
-    .footer-content>.contact {
+    .footer-inside>.contact {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -428,14 +440,37 @@ h1 {
         display: none;
     }
 
+    .footer-content {
+        display: block;
+        width: 100%;
+        height: 100vh;/*cette propriété ne passe pas si on la mets sur le footer*/
+    }
+
     /*nécessité d'une class responsive avec un toogle*/
     .footer-active {
-        height: 100%;
+        display: block;
         position: absolute;
+        top: 0;
+        height: 0;
+        padding-top: 0;
+        z-index: 100 !important;
+    }
+
+    .footer-inside {
+        height: 80%;
+    }
+
+    .footer-inside h2 {
+        margin-top: 3rem;
+    }
+
+    .contact {
+        height: 100%;
+        align-content: space-around;
     }
 
     .footer-active .contact a{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
