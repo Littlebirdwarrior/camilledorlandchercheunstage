@@ -128,6 +128,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.icone-close{
+    display: none;
+}
+
 /*-------------------l'espace de jeu*/
 .gameGround {
     width: 90%;
